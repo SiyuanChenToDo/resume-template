@@ -1,0 +1,101 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[8pt]{resume}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+\usepackage{multicol}
+\begin{document}
+\pagenumbering{gobble}
+
+\name{陈思远}
+\basicInfo{
+  \email{2637427015@qq.com} \textperiodcentered\ 
+  \phone{157-2704-3901} \textperiodcentered\
+  \github{https://github.com/SiyuanChenToDo}
+}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{华中农业大学}（211 双一流）}{2023.9 - 至今}
+人工智能专业 | 本科
+
+\vspace{0.1cm}
+\begin{itemize}[itemsep=-1pt, parsep=2pt]
+  \item \textbf{学业成绩}：均分 89.51，GPA 3.72/4.0，综合排名 3/58
+  \item \textbf{英语水平}：CET-4 558，CET-6 418
+  \item \textbf{荣誉奖项}：2024-2025学年国家奖学金、三好学生、优秀青年志愿者、社会实践先进个人
+\end{itemize}
+
+\vspace{0.1cm}
+\textbf{核心课程}：知识表示与认知工程（99）、人工智能（96）、Java程序设计（95）、微积分A（95）、C/C++语言程序设计（95）、数字图像处理（94）、机器学习（93）、计算机视觉（90）、概率论与数理统计（90）
+
+\section{\faCogs\ 科研与项目经历}
+\datedsubsection{\textbf{基于细粒度知识图谱的多智能体协作科学猜想系统（FIG-MAC）}}{2025.5 - 至今}
+\textit{项目第一负责人}
+
+\begin{onehalfspacing}
+\begin{itemize}[itemsep=-1pt, parsep=2pt]
+  \item \textbf{痛点与方案}：针对现有LLM自动生成科学假设方法存在的三大瓶颈——（1）非结构化上下文导致细粒度知识表示不足、（2）缺乏知识演化可追溯性难以生成交领域创新猜想、（3）缺乏类人类专家分工协作机制导致生成-评估闭环不完整，提出\textbf{Fine-grained Inspiration Graph-empowered Multi-Agent Collaboration framework（FIG-MAC）}
+  \item \textbf{细粒度知识图谱模块（FIG）}：基于Qwen3-8B-Instruct模型进行SFT微调，使用LoRA（rank=64，$\alpha$=128）+ DeepSpeed ZeRO-3训练，从2万篇文献中抽取"科学灵感-实验方法-研究问题"细粒度语义单元，构建启发式关系的细粒度知识图谱
+  \item \textbf{骨架-血肉混合推理}：图推理（结构骨架）与向量检索（语义血肉）双轨并行，实现可追溯的科学猜想路径生成，有效解决RAG粗粒度检索问题
+  \item \textbf{角色专业化多智能体系统}：设计Conjector（猜想生成）、Screener（质量筛选）、Validator（可行性验证）三类专家智能体，模拟真实科研团队协作，完成猜想生成-筛选-验证闭环
+  \item \textbf{成果}：系统在源多样性、溯源调整新颖度、原始新颖度指标上显著超越SOTA方法；产出核心论文一篇，\textbf{CCF-A类会议 ACL 在投}
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{面向油菜基因表达的科学猜想大模型研究（省级大创）}}{2025.4 - 至今}
+\textit{项目第一负责人}
+
+\begin{onehalfspacing}
+\begin{itemize}[itemsep=-1pt, parsep=2pt]
+  \item \textbf{项目统筹}：主持湖北省大学生创新创业训练计划项目，规划研究路线，协调整体科研进度
+  \item \textbf{知识库构建}：构建3万篇油菜基因表达文献数据库，基于BERT进行领域实体识别与关系抽取，完成专业知识库构建
+  \item \textbf{系统开发}：将RAG检索增强生成技术与LLM相结合，实现生物领域科学假设自动生成系统，独立完成全部代码与核心论文撰写
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{基于YOLOv8n的猪舍粪便检测算法与应用研究}}{2024.8 - 2025.8}
+\textit{项目核心成员}
+
+\begin{onehalfspacing}
+\begin{itemize}[itemsep=-1pt, parsep=2pt]
+  \item \textbf{数据集构建}：针对公开猪粪数据集匮乏问题，深入规模化养猪场采集数据，构建专用猪粪检测数据集（5,000+标注图像）
+  \item \textbf{算法创新}：基于YOLOv8n提出PM-YOLO高效检测方法，优化骨干网络与检测头设计，mAP@0.5提升12.3\%
+  \item \textbf{系统落地}：协助设计开发猪栏粪便清洁机器人控制系统，实现检测-定位-清理全流程自动化
+  \item \textbf{成果}：产出核心论文一篇，\textbf{投稿至中科院一区TOP期刊《Artificial Intelligence In Agriculture》（IF=12.4）在投}
+\end{itemize}
+\end{onehalfspacing}
+
+\section{\faTrophy\ 竞赛与社团经历}
+\datedsubsection{\textbf{校智能机器人实验室 | 队长}}{2025.5 - 至今}
+
+\begin{itemize}[itemsep=-1pt, parsep=1pt]
+  \item 睿抗机器人开发者大赛全国选拔赛宇树科技"四足多模态"赛项\textbf{全国一等奖}
+  \item 第八届中国高校智能机器人创意大赛\textbf{国家三等奖}、第27届中国机器人及人工智能大赛\textbf{湖北赛区一等奖}
+\end{itemize}
+
+\datedsubsection{\textbf{校数学建模协会 | 队长}}{2025.2 - 至今}
+
+\begin{itemize}[itemsep=-1pt, parsep=1pt]
+  \item 2025年第十五届MathorCup数学应用挑战赛\textbf{区域赛三等奖}、第41届美国大学生数学建模竞赛\textbf{H奖}
+  \item 第15届亚太杯数学建模竞赛\textbf{国家三等奖}、2025年全国大学生数学建模竞赛\textbf{湖北省二等奖}
+\end{itemize}
+
+\datedsubsection{\textbf{校ACM程序设计队 | 队长}}{2023.9 - 2025.5}
+
+\begin{itemize}[itemsep=-1pt, parsep=1pt]
+  \item ICPC国际大学生程序设计竞赛\textbf{湖北省赛优胜奖}、CCPC\textbf{郑州邀请赛/东北四省邀请赛优胜奖}
+  \item 第16届蓝桥杯\textbf{湖北赛区C/C++ A组三等奖}、团体程序设计天梯赛\textbf{湖北省高校二等奖}
+\end{itemize}
+
+\section{\faCogs\ 专业技能}
+\begin{itemize}[parsep=0.5ex, itemsep=-1pt]
+  \item \textbf{编程语言}：熟练掌握C/C++、Python、Java、Matlab；熟悉PyTorch、HuggingFace Transformers深度学习框架
+  \item \textbf{大模型技术}：LLM微调（LoRA/QLoRA）、RAG/GraphRAG、多智能体系统（AutoGen/LangChain）、提示工程
+  \item \textbf{AI科研能力}：知识图谱构建（Neo4j）、信息抽取（NER/RE）、文献调研、假设生成与评估、学术论文写作
+  \item \textbf{个人特质}：乐观善良、自律踏实、有科研热情、学习能力强，具备独立科研与团队协作能力
+\end{itemize}
+
+\end{document}
